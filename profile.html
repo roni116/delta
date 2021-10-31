@@ -2,106 +2,7 @@
 <html>
     <head>
         <title>Courses</title>
-        <style>
-            body {
-background-color: #fdfffd;
-}
-
-body {margin:0;}
-
-.navbar {
-  overflow: hidden;
-  background-color: #062c58;
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
-
-.navbar a {
-  float: right;
-  display: block;
-  color: #ffffff;
-  text-align: center;
-  padding: 16px 15px;
-  text-decoration: none;
-  font-size: 17px;
-}
-
-.navbar a:hover {
-  background: rgb(1, 109, 151);
-  color: rgb(255, 255, 255);
-}
-
-.main {
-  padding: 16px;
-  margin-top: 30px;
-  height: 1500px; /* Used in this example to enable scrolling */
-}
-h2{
-	font-family: "sans-serif";
-	background-color:#08FF0B;
-	padding: 2px 0px;
-	height:60px;
-	border-radius: 20px;
-	box-shadow: 11px 14px 5px #cbcbcb;
-	
-}
-
-.active {
-  font-weight: bold;
-}
-.table-box
-{
-    margin: 50px auto;
-}
-
-.table-row{
-    display: table;
-    width: 80%;
-    margin: 10px auto;
-    font-family: sans-serif;
-    background: transparent;
-    padding: 12px 0;
-    color: #555;
-    font-size: 13px;
-    box-shadow: 0 1px 4px 0px rgba(0,0,50,0.3);
-    border-radius: 8px;
-}
-.table-head{
-    background: #33b322;
-    box-shadow: none;
-    color: rgb(255, 245, 245);
-    font-weight: 600;
-}
-.table-head .table-cell{
-    border-right: none;
-}
-.table-cell{
-    display: table-cell;
-    width: 20%;
-    text-align: center;
-    padding: 4px 0;
-    border-right: 1px solid #d6d4d4;
-    vertical-align: middle;
-    font-size: 16px;
-}
-.first-cell{
-    text-align: left;
-    padding-left: 10px;
-}
-.last-cell{
-    border-right: none;
-}
-a{
-    text-decoration: none;
-}
-
-@media only screen and (max-width: 600px) {
-  .table-row {
-    font-size: 11px;
-  }
-}
-</style>
+        <link rel="stylesheet" href="style.css">
 </head>
         <body>
         <div class="navbar">
@@ -112,115 +13,115 @@ a{
         <div class="table-box">
             <div class="table-row table-head">
                 <div class="table-cell first-cell">
-                    <p>Course name</p>
+                    <p class="p-style">Course name</p>
                 </div>
                 <div class="table-cell">
-                    <p>Total Chapters</p>
+                    <p class="p-style">Total Chapters</p>
                 </div>
                 <div class="table-cell last-cell">
-                    <p>Status</p>
+                    <p class="p-style">Status</p>
                 </div> 
             </div>
     
     
             <div class="table-row">
                 <div class="table-cell first-cell">
-                    <p>Century Triology I: Fall of giants</p>
+                    <p class="p-style">Century Triology I: Fall of giants</p>
                 </div>
                 <div class="table-cell">
-                    <p>151</p>
+                    <p class="p-style">151</p>
                 </div>
                 <div class="table-cell last-cell">
-                    <a href="" style="color: black;">Locked</a>
+                    <a class="locked" href="">Locked</a>
                 </div>   
             </div>
     
             <div class="table-row">
                 <div class="table-cell first-cell">
-                    <p>Emperors of the peacock throne</p>
+                    <p class="p-style">Emperors of the peacock throne</p>
                 </div>
                 <div class="table-cell">
-                    <p>--</p>
+                    <p class="p-style">--</p>
                 </div>
                 <div class="table-cell last-cell">
-                    <a href="" style="color: black;">Locked</a>
+                    <a class="locked" href="">Locked</a>
                 </div>   
             </div>
             <div class="table-row">
                 <div class="table-cell first-cell">
-                    <p>Teacher man</p>
+                    <p class="p-style">Teacher man</p>
                 </div>
                 <div class="table-cell">
-                    <p>3</p>
+                    <p class="p-style">3</p>
                 </div>
                 <div class="table-cell last-cell">
-                    <a href="teacherman.html" style="color: rgb(255, 0, 0);">Read now</a>
+                    <a class="active" href="teacherman.html">Read now</a>
                 </div>   
             </div>
             <div class="table-row">
                 <div class="table-cell first-cell">
-                    <p>Sapiens I: Cognitive Revolution</p>
+                    <p class="p-style">Sapiens I: Cognitive Revolution</p>
                 </div>
                 <div class="table-cell">
-                    <p>18</p>
+                    <p class="p-style">18</p>
                 </div>
                 <div class="table-cell last-cell">
-                    <a href="#chapter" style="color: rgb(10, 10, 10);">Locked</a>
+                    <a class="locked" href="#chapter">Locked</a>
                 </div>   
             </div>
             <div class="table-row">
                 <div class="table-cell first-cell">
-                    <p>Sapiens II: Agricultural Revolution</p>
+                    <p class="p-style">Sapiens II: Agricultural Revolution</p>
                 </div>
                 <div class="table-cell">
-                    <p>--</p>
+                    <p class="p-style">--</p>
                 </div>
                 <div class="table-cell last-cell">
-                    <a href="#chapter" style="color: rgb(0, 0, 0);">Locked</a>
+                    <a class="locked" href="#chapter">Locked</a>
                 </div>   
             </div>
             <div class="table-row">
                 <div class="table-cell first-cell">
-                    <p>Sapiens III: The unification of humankind</p>
+                    <p class="p-style">Sapiens III: The unification of humankind</p>
                 </div>
                 <div class="table-cell">
-                    <p>--</p>
+                    <p class="p-style">--</p>
                 </div>
                 <div class="table-cell last-cell">
-                    <a href="#chapter" style="color: rgb(0, 0, 0);">Locked</a>
+                    <a class="locked" href="#chapter">Locked</a>
                 </div>   
             </div>
             <div class="table-row">
                 <div class="table-cell first-cell">
-                    <p>Sapiens IV: Scientific Revolution </p>
+                    <p class="p-style">Sapiens IV: Scientific Revolution </p>
                 </div>
                 <div class="table-cell">
-                    <p>--</p>
+                    <p class="p-style">--</p>
                 </div>
                 <div class="table-cell last-cell">
-                    <a href="#chapter" style="color: rgb(0, 0, 0);">Locked</a>
+                    <a class="locked" href="#chapter">Locked</a>
                 </div>   
             </div>
             <div class="table-row">
                 <div class="table-cell first-cell">
-                    <p>Sapiens V: The conclusion</p>
+                    <p class="p-style">Sapiens V: The conclusion</p>
                 </div>
                 <div class="table-cell">
-                    <p>--</p>
+                    <p class="p-style">--</p>
                 </div>
                 <div class="table-cell last-cell">
-                    <a href="#chapter" style="color: rgb(15, 15, 15);">Locked</a>
+                    <a class="locked" href="#chapter">Locked</a>
                 </div>   
             </div>
             <div class="table-row">
                 <div class="table-cell first-cell">
-                    <p>Short stories of Roald Dahl</p>
+                    <p class="p-style"></p>Short stories of Roald Dahl</p>
                 </div>
                 <div class="table-cell">
-                    <p>--</p>
+                    <p class="p-style">--</p>
                 </div>
                 <div class="table-cell last-cell">
-                    <a href="roaldahl.html" style="color: rgb(255, 0, 0);">Read now</a>
+                    <a class="active" href="roaldahl.html">Read now</a>
                 </div>   
             </div>
     </div>   

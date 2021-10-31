@@ -2,106 +2,7 @@
 <html>
     <head>
         <title>Teacher man</title>
-        <style>
-            body {
-background-color: #ffffff;
-}
-
-body {margin:0;}
-
-.navbar {
-  overflow: hidden;
-  background-color: #062c58;
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
-
-.navbar a {
-  float: right;
-  display: block;
-  color: #ffffff;
-  text-align: center;
-  padding: 16px 15px;
-  text-decoration: none;
-  font-size: 17px;
-}
-
-.navbar a:hover {
-  background: rgb(1, 109, 151);
-  color: rgb(255, 255, 255);
-}
-
-.main {
-  padding: 16px;
-  margin-top: 30px;
-  height: 1500px; /* Used in this example to enable scrolling */
-}
-h2{
-	font-family: "sans-serif";
-	background-color:#08FF0B;
-	padding: 2px 0px;
-	height:60px;
-	border-radius: 20px;
-	box-shadow: 11px 14px 5px #cbcbcb;
-	
-}
-
-.active {
-  font-weight: bold;
-}
-.table-box
-{
-    margin: 50px auto;
-}
-
-.table-row{
-    display: table;
-    width: 80%;
-    margin: 10px auto;
-    font-family: sans-serif;
-    background: transparent;
-    padding: 12px 0;
-    color: #555;
-    font-size: 13px;
-    box-shadow: 0 1px 4px 0px rgba(0,0,50,0.3);
-    border-radius: 8px;
-}
-.table-head{
-    background: #33b322;
-    box-shadow: none;
-    color: rgb(255, 245, 245);
-    font-weight: 600;
-}
-.table-head .table-cell{
-    border-right: none;
-}
-.table-cell{
-    display: table-cell;
-    width: 20%;
-    text-align: center;
-    padding: 4px 0;
-    border-right: 1px solid #d6d4d4;
-    vertical-align: middle;
-    font-size: 16px;
-}
-.first-cell{
-    text-align: left;
-    padding-left: 10px;
-}
-.last-cell{
-    border-right: none;
-}
-a{
-    text-decoration: none;
-    color: rgb(241, 52, 52);
-}
-
-@media only screen and (max-width: 600px) {
-  .table-row {
-    font-size: 11px;
-  }
-}
+        <link rel="stylesheet" href="style.css">
 </style>
 </head>
         <body>
@@ -112,26 +13,26 @@ a{
         <div class="table-box">
             <div class="table-row table-head">
                 <div class="table-cell first-cell">
-                    <p>Chapter name</p>
+                    <p class="p-style">Chapter name</p>
                 </div>
                 <div class="table-cell">
-                    <p>Total Chapters</p>
+                    <p class="p-style">Total Chapters</p>
                 </div>
                 <div class="table-cell last-cell">
-                    <p>Status</p>
+                    <p class="p-style">Status</p>
                 </div> 
             </div>
     
     
             <div class="table-row">
                 <div class="table-cell first-cell">
-                    <p>Chapter 1</p>
+                    <p class="p-style">Chapter 1</p>
                 </div>
                 <div class="table-cell">
-                    <p>3</p>
+                    <p class="p-style">3</p>
                 </div>
                 <div class="table-cell last-cell">
-                    <a href="chapterdetails.html">Read now</a>
+                    <a class="active" href="chapterdetails.html">Read now</a>
                 </div>   
             </div>
     
